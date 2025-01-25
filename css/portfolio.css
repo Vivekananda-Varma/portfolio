@@ -1,0 +1,133 @@
+
+.offcanvas .navbar-nav {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.offcanvas .nav-item {
+    display: block;
+}
+
+#resume-btn,
+#contact-me-btn {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+}
+
+
+button {
+    background-color: #a6a6a6; /* Darker background color */
+    border: none;
+    color: #3e3e3e;
+    padding: 15px 20px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 8px; 
+    transition: background-color 0.4s ease, transform 0.2s ease;
+    cursor: pointer;
+    width: auto;
+}
+
+button i {
+    margin-right: 8px; 
+    font-weight: bold; /* Make the icons bolder */
+    font-size: 18px; /* Increase the icon size for better visibility */
+}
+
+button span {
+    max-width: 0;
+    transition: max-width 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+button:hover {
+    background-color: #8c8c8c; /* Darker background on hover */
+}
+
+button:hover span {
+    max-width: 9rem;
+    opacity: 1;
+}
+
+button:active {
+    transform: scale(0.95); 
+}
+
+
+
+  
+
+
+.project-card {
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background: rgba(255, 255, 255, 0.1);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    backdrop-filter: blur(15px);
+    transition: bottom 0.6s ease-in-out;
+    padding: 10px 20px;
+}
+
+.project-card:hover .overlay {
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        bottom: 0;
+        height: 25%;
+    }
+
+    .project-card:hover .overlay {
+        bottom: 0;
+    }
+
+    .col {
+        padding: 3%;
+    }
+
+    .project-card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+/* Prevent the close button from changing color on hover */
+#successAlert .btn-close:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: inherit;
+}
+/* Prevent the close button from changing when active */
+#successAlert .btn-close:hover,
+#successAlert .btn-close:active {
+    background-color: transparent;
+    border-color: transparent;
+    color: inherit;
+    box-shadow: none; 
+    transform: none; 
+}
+
+  
